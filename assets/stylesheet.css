@@ -1,12 +1,25 @@
-body {
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+:root {
+    --primary-color: purple;
+    --secondary-color: black;
+    --tertiary-color: white;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
 /* header and navigation styles */
 
 header {
-    background-color:burlywood;
+    background-color:var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -24,12 +37,12 @@ header h1 {
     font-style: italic;
     margin: 0;
     font-size: 48px;
-    color: purple;
+    color:var(--primary-color);
     text-shadow: 0 0 10px rgba(128,0,128)
 }
 header a {
-    color: purple;
-    text-decoration: black;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 header nav {
@@ -50,20 +63,92 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 header nav ul li a:hover {
-    background-color:purple;
-    color: gold;
+    background-color:var(--primary-color);
+    color:silver;
     border-radius: 15px;
     text-shadow: none;
 }
  /* end header and navigation styles */
 
+footer {
+    background-color: var(--tertiary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+ footer div {
+     line-height: 1.5;
+     text-align: center;
+ }
+ footer a {
+     color: var(--secondary-color);
+ }
+.github-img {
+    
+}
+.hero {
+    background-image: url("../assets/lines.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    color: purple
+}
  .section-title {
      font-size: 42px;
      border-bottom: 5px solid;
-     color: gray;
+     color: black;
      padding-bottom: 20px;
      text-align: center;
-     margin: auto 0 35px auto;
-     width: 50%;
+     margin: auto 0 25px auto;
+     width: 100%;
  }
- 
+
+.primary-border {
+    border-color: purple;
+}
+
+
+.portfolio {
+    text-align: left;
+}
+
+/* UTILITIES */
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .section-title {
+    width: 80%;
+  }
+
