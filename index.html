@@ -15,13 +15,13 @@
 <nav>
     <ul>
     <li>
-        <a href="about-me">About Me</a>
+        <a href="#about-me">About Me</a>
     </li>
     <li>
-        <a href="portfolio">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
     </li>
     <li>
-        <a href="contact">Contact</a>
+        <a href="#contact">Contact</a>
     </li>
     </ul>
 </nav>
@@ -32,11 +32,13 @@
 <section class="hero">
     <h2> Precision, Creativity, Functionality & Technology</h2> 
 </section>
+
 <section id= "about-me" class="intro">
-    <div class="flex-row">
-    <h2 class="section-title primary-border">
+        <h2 class="section-title primary-border">
         About Me
     </h2>
+    <div class="about-me-img">
+    <img src="..//Portfolio/assets/Picture1.jpg"> </div> 
     <p>
         As a web developer, I happen to be the behind the scenes programmer that ensures all your World Wide Web Applications
         enhances your business module and services.        
@@ -45,42 +47,70 @@
         With twenty-five years of experience with Microsoft Office Stack, I wanted to advance my knowledge in web development as well as other
         developer platforms.  Becoming a full stack web developer was the next step. I began my intoduction into full stack in October of 2021
         and have fully emersed myself in everything Web Development. This has been a great way to merge two of my favorite things, coding and learning. 
-        <br/>
+    <p>
          With these new skills and the continuing evolution of Technology, theres no challenge too big that I can't resolve.
-
+    </p>
     </p>
     </div>
-    <div id="portfolio">
+    </div>
+</section>
+
+<section id="portfolio-work">
+<div class="flex-row">
         <h2 class="section-title primary-border">
             Portfolio
         </h2>
-        <div class="run-buddy-img">
-        <img src="../run-buddy.png"  alt=""/>
-        <h3>Run Buddy</h3>     
-        <div class="run-buddy-text">
+    </div>
+
+<div class="portfolio">
+    <article class="work">  
+         <img src="../Portfolio/assets/Run buddy.jpg" alt=""/>
+         <div class="link">
+        <a href="https://stephiethomas.github.io/run-buddy/">
+        <h3>Run Buddy</h3>
+        </a> 
         <h4>HTML/CSS</h4>
     </div>
     </div>
     </div>
-</section> 
+</article> 
+
+
+<!--<article class="work">
+            <img src="../Portfolio/assets/rorobot fight.png" alt=""/>
+            <div class="link">
+                <a href="https://stephiethomas.github.io/robot-gladiators/"> 
+                <h3>Robot Gladiators</h3>
+                </a>
+                <div class="robot-text">
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+
+</article> --> 
+</div>
+</section>
+
+
 </body>
 
 
 
-<section id="contact-info">
+<section id="contact">
     <h2 class="section-title primary-border">
     Contact Information
     </h2>
 </section>
 
  <footer>
+     <div>
     <address>Cell: 832.983.7597</address>
+     </div>
     <div>  
     <a href="stephie.thomas02@gmail.com">Email</a> 
     </div>
     <div class="github-img">
     <a href="https://github.com/stephiethomas">GITHUB</a> 
-    <img src=".//assets/GitHub-logo.png"  />
     </div>
     </section>
 </footer>

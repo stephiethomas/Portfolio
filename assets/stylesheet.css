@@ -81,13 +81,15 @@ footer {
  footer div {
      line-height: 1.5;
      text-align: center;
+     font-size: 20px;
+     line-height: 1.5;
+
  }
  footer a {
      color: var(--secondary-color);
+         
  }
-.github-img {
-    
-}
+
 .hero {
     background-image: url("../assets/lines.jpeg");
     background-size: cover;
@@ -112,13 +114,62 @@ footer {
     border-color: purple;
 }
 
+.about-me-img {
+    align-items: center;
+    width: 50%;
+    margin: 0 auto 35px auto;
+    padding-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.intro p {
+    text-align: justify;
+    margin: 35px;
+}
+
 
 .portfolio {
-    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+.work{
+    margin: 20px;
+    flex: 1;
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+       
+}
+.work img {
+    margin: 0 auto 35px auto;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--primary-color);
+    justify-content: space-evenly;
+    
+}
+
+.link {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+} 
+.work h3 {
+    font-size: 28px;
+
 }
 
 /* UTILITIES */
-
+.flex-row {
+    display: flex;
+}
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
